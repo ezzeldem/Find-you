@@ -1,0 +1,111 @@
+.pircingBox {
+  --paddignBox: 60px;
+  padding: 60px 0;
+  .sectionTiti {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .pircingBox {
+    margin: 20px 0;
+    padding: 70px 0;
+    border: 1px solid rgba($darckBlueColor, 0.2);
+    border-radius: 10px;
+    position: relative;
+    .img_box {
+      padding: 0 var(--paddignBox);
+    }
+    .priceName {
+      padding: 30px var(--paddignBox);
+      strong {
+        font-size: 40px;
+        color: $darckBlueColor;
+        font-weight: 600;
+      }
+      span {
+        font-size: 24px;
+        color: $darckBlueColor;
+        font-weight: 500;
+      }
+    }
+    .priceList {
+      border-top: 1px solid rgba($darckBlueColor, 0.2);
+      padding: 30px var(--paddignBox);
+      li {
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: $darckBlueColor;
+      }
+    }
+    .button_box {
+      padding: 30px var(--paddignBox);
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0 10px !important;
+        font-size: 16px;
+        font-weight: 500;
+        &.blueP {
+          color: $babyBlueColor;
+        }
+        &.orandP {
+          color: $orangColor;
+        }
+      }
+    }
+    .mark_box {
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      padding: 10px 44px 10px 55px;
+      color: $whiteColor;
+      font-size: 18px;
+      font-weight: 500;
+      transform: rotate(-90deg) translate(-64px, -29px);
+      background-color: $babyBlueColor;
+      &.blueP {
+        color: $whiteColor;
+      }
+      &.orandP {
+        background-color: rgba($orangColor, 0.2);
+        color: $orangColor;
+      }
+      &:after {
+        bottom: 50%;
+        left: 0;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $whiteColor;
+        border-width: 23px;
+        transform: rotate(90deg) translateX(50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pircingBox {
+    .sectionTiti {
+      max-width: 100%;
+    }
+    .pircingBox {
+      .mark_box {
+        right: -71px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pircingBox {
+    .pircingBox {
+      padding: 30px 0;
+      --paddignBox: 20px;
+    }
+  }
+}

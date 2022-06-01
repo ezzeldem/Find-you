@@ -1,0 +1,32 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset !important;
+}
+
+a {
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+input {
+  outline: none;
+  border: 0;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+
+@media (max-width: 772px) {
+  .order1 {
+    order: -1;
+  }
+}

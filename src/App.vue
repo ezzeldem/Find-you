@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-header></the-header>
+  <the-intro></the-intro>
+  <the-banner></the-banner>
+  <the-create></the-create>
+  <the-invent></the-invent>
+  <the-pricing></the-pricing>
+  <the-banner-downlode></the-banner-downlode>
+  <the-footer></the-footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TheHeader from "./components/TheHeader/TheHeader.vue";
+import TheIntro from "./components/TheIntro/TheIntro.vue";
+import TheBanner from "./components/TheBanner/TheBanner.vue";
+import TheCreate from "./components/TheCreate/TheCreate.vue";
+import TheInvent from "./components/TheCreate/TheInvent.vue";
+import ThePricing from "./components/ThePricing/ThePricing.vue";
+import TheBannerDownlode from "./components/TheBannerDownlode/TheBannerDownlode.vue";
+import TheFooter from "./components/TheFooter/TheFooter.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheHeader,
+    TheIntro,
+    TheBanner,
+    TheCreate,
+    TheInvent,
+    ThePricing,
+    TheBannerDownlode,
+    TheFooter
+  },
+  data() {
+    return {
+      img1: "phineImg.png",
+      img2: "investImg.png",
+    };
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "@/Style/default.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 </style>

@@ -1,0 +1,31 @@
+.create_section {
+  padding: 60px 0;
+  .form-group {
+    padding: 30px 0;
+    input {
+      margin: 0 20px 10px 0;
+      padding: 12px 20px;
+      color: $babyBlueColor;
+      border-radius: 15px;
+      background-color: rgba($babyBlueColor, 0.15);
+    }
+    button {
+      font-weight: 550;
+      padding: 10px 40px;
+      @extend%trans_4;
+      border-radius: 8px;
+      font-size: 15px;
+      border: 1px solid rgba($babyBlueColor, 1);
+      color: $whiteColor;
+      background-color: rgba($babyBlueColor, 1);
+      &:hover {
+        background-color: transparent;
+        color: rgba($babyBlueColor, 1);
+      }
+    }
+  }
+  .button_box {
+    padding: 50px 0 0;
+  }
+}
+
