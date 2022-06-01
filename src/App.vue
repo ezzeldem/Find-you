@@ -6,6 +6,7 @@
   <the-invent></the-invent>
   <the-pricing></the-pricing>
   <the-banner-downlode></the-banner-downlode>
+  <the-newsletter></the-newsletter>
   <the-footer></the-footer>
 </template>
 
@@ -17,6 +18,7 @@ import TheCreate from "./components/TheCreate/TheCreate.vue";
 import TheInvent from "./components/TheCreate/TheInvent.vue";
 import ThePricing from "./components/ThePricing/ThePricing.vue";
 import TheBannerDownlode from "./components/TheBannerDownlode/TheBannerDownlode.vue";
+import TheNewsletter from "./components/TheNewsletter/TheNewsletter.vue";
 import TheFooter from "./components/TheFooter/TheFooter.vue";
 export default {
   components: {
@@ -27,6 +29,7 @@ export default {
     TheInvent,
     ThePricing,
     TheBannerDownlode,
+    TheNewsletter,
     TheFooter
   },
   data() {

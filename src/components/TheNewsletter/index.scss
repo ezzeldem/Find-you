@@ -1,0 +1,24 @@
+.newsletter_section {
+  .newsletterBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .textBOx {
+      margin: 0 0 20px;
+      max-width:70% ;
+    }
+  }
+}
+
+
+@media (max-width: 772px) {
+  .newsletter_section {
+    .newsletterBox {
+      .textBOx {
+        margin: 0 0 20px;
+        max-width:100% ;
+      }
+    }
+  }
+}

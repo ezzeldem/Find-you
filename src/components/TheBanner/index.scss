@@ -6,7 +6,7 @@
   .mark_box {
     position: absolute;
     top: 0px;
-    left: 10px;
+    right: 10px;
     padding: 10px 54px 10px 75px;
     color: $whiteColor;
     font-size: 18px;
@@ -42,14 +42,14 @@
   }
 }
 
-@media (max-width: 992px) {
-  .banner_section {
-    .mark_box {
-      left: unset;
-      right: 10px;
-    }
-  }
-}
+// @media (max-width: 1024px) {
+//   .banner_section {
+//     .mark_box {
+//       left: unset;
+//       right: 10px;
+//     }
+//   }
+// }
 
 @media (max-width: 772px) {
   .banner_section {
